@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: #f3f3f3;
+            margin-top: 25vh;
+            
+            font-size: 48px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: rgb(39, 39, 39);
+            text-align: center;
+
+        
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt('Enter number A:'));
+        var calc = prompt('Enter arithmetic operator: +, -, /, *.');
+        var b = parseInt(prompt('Enter number B:'));
+        
+        switch (calc) {
+
+            case '+':
+            document.write('result is: '+ (a + b))
+            break;
+
+            case '-': 
+            document.write('result is: '+ (a - b))
+            break;
+
+            case '/': 
+            document.write('result is: '+ (a / b))
+            break;
+
+            case '*': 
+            document.write('result is: '+ (a * b))
+            break;
+
+            default:
+            alert("Unknown value"); 
+            break;
+        }
+    </script>
+</body>
+</html>
